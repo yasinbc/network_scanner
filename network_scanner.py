@@ -9,8 +9,8 @@ def scan(ip):
     answered_list = scapy.srp(arp_request_broadcast, timeout=1)[0]
 
     for element in answered_list:
-        print("IP>  "+element[1].psrc)
-        print("MAC> "+element[1].hwsrc)
+        print("IP>  ["+element[1].psrc+"]")
+        print("MAC> ["+element[1].hwsrc+"]")
         print("---------------------------------------------------")
 
 #    scapy.arping(ip)
