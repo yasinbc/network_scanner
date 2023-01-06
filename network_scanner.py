@@ -8,6 +8,7 @@ def scan(ip):
 
     #pregunta a cada subnet quien tiene nuestra IP
     answered, unanswered = scapy.srp(arp_request_broadcast, timeout=1)
+    print(answered.summary())
 
 
 #    scapy.arping(ip)
