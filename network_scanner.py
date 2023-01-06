@@ -4,7 +4,8 @@ def scan(ip):
     #pregunta a la maquina quien tiene este IP
     arp_request = scapy.ARP(pdst = ip)
     broadcast = scapy.Ether()
-    scapy.ls(scapy.Ether)
+    #lista las MACs asociadas
+    scapy.ls(scapy.Ether())
 
 #    scapy.arping(ip)
 
